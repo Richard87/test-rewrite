@@ -1,9 +1,8 @@
 module.exports = {
-    rewrites:  () => [
+    rewrites: () => [
         {
             source: "/:path*",
-            has: [{key: 'host', type:"host", value: "(?<host>.*)"}],
-            destination: "/test/:path*/:host"
+            destination: "/test/:path*"
         }
     ]
 }
